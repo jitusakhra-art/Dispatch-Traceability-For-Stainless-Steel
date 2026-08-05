@@ -4,327 +4,256 @@
 <head>
 
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
 
 <title>CEX260803-05 | Dispatch Material Traceability</title>
 
 <style>
 
-/*==================================================
-GENERAL
-==================================================*/
-
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+
+margin:0;
+padding:0;
+box-sizing:border-box;
+
 }
 
 body{
 
-    background:#eef2f7;
-    font-family:Calibri,"Segoe UI",Arial,sans-serif;
-    color:#222;
-    padding:35px;
+background:#f2f4f7;
+font-family:Calibri,"Segoe UI",Arial,sans-serif;
+padding:10px;
+color:#222;
 
 }
 
 .container{
 
-    width:960px;
-    margin:auto;
-    background:#fff;
-    border-radius:14px;
-    overflow:hidden;
-    box-shadow:0 12px 35px rgba(0,0,0,.18);
-    border:1px solid #d8dce2;
+width:100%;
+max-width:1100px;
+margin:auto;
+background:#fff;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 4px 18px rgba(0,0,0,.15);
 
 }
 
-/*==================================================
+/*=========================================
 HEADER
-==================================================*/
+=========================================*/
 
 .header{
 
-    background:linear-gradient(135deg,#0B3B75,#1D5FAF);
-
-    color:white;
-
-    padding:30px;
-
-    display:flex;
-
-    align-items:center;
-
-}
-
-.logo{
-
-    width:120px;
-    height:auto;
-
-    background:white;
-
-    padding:8px;
-
-    border-radius:10px;
-
-    box-shadow:0 3px 8px rgba(0,0,0,.25);
-
-}
-
-.header h1{
-
-    font-size:34px;
-    letter-spacing:1px;
-
-}
-
-.header h2{
-
-    margin-top:8px;
-    color:#FFD54A;
-    font-size:18px;
-    letter-spacing:3px;
-    text-transform:uppercase;
-
-}
-
-.line{
-
-    width:180px;
-
-    height:4px;
-
-    background:#FFD54A;
-
-    margin-top:18px;
-
-    border-radius:20px;
-
-}
-
-.header{
-
-    background:linear-gradient(135deg,#0B3B75,#1D5FAF);
-
-    color:white;
-
-    padding:30px;
-
-    display:flex;
-
-    align-items:center;
+background:#1F4E78;
+color:#fff;
+padding:20px;
+display:flex;
+align-items:center;
 
 }
 
 .headerLeft{
 
-    width:180px;
+width:140px;
 
-    display:flex;
+display:flex;
 
-    justify-content:center;
+justify-content:center;
 
-    align-items:center;
-
-    flex-shrink:0;
+align-items:center;
 
 }
 
 .headerRight{
 
-    flex:1;
+flex:1;
 
-    display:flex;
+text-align:center;
 
-    flex-direction:column;
+padding-right:140px;
 
-    justify-content:center;
+}
+.logo{
 
-    align-items:center;
-
-    text-align:center;
-
-    padding-right:180px;
+width:90px;
+background:#fff;
+padding:6px;
+border-radius:8px;
+margin-bottom:0px;
 
 }
 
-/*==================================================
+.header h1{
+
+font-size:30px;
+font-weight:bold;
+
+}
+
+.header p{
+
+margin-top:5px;
+font-size:15px;
+
+}
+
+/*=========================================
+TITLE
+=========================================*/
+
+.sectionTitle{
+
+background:#D9EAF7;
+padding:10px;
+text-align:center;
+font-size:22px;
+font-weight:bold;
+border-bottom:3px solid #1F4E78;
+
+}
+
+/*=========================================
 DETAIL TABLE
-==================================================*/
+=========================================*/
 
 .details{
 
-    width:100%;
-    border-collapse:collapse;
+width:100%;
+border-collapse:collapse;
 
 }
 
 .details td{
 
-    border:1px solid #d7dce5;
-    padding:14px;
-    font-size:15px;
-    vertical-align:middle;
+border:1px solid #D5DCE5;
+padding:12px;
+font-size:15px;
 
 }
 
 .title{
 
-    width:240px;
-    background:#EDF4FF;
-    color:#0B3B75;
-    font-weight:bold;
+width:240px;
+background:#EDF4FF;
+font-weight:bold;
+color:#0B3B75;
 
 }
 
-/*==================================================
+/*=========================================
 BUTTON
-==================================================*/
+=========================================*/
 
 .btn{
 
-    display:inline-block;
-    background:#0B3B75;
-    color:#fff;
-    padding:10px 22px;
-    border-radius:6px;
-    text-decoration:none;
-    font-weight:bold;
-    transition:.3s;
+display:block;
+width:100%;
+background:#1F4E78;
+color:#fff;
+text-decoration:none;
+text-align:center;
+padding:11px;
+font-weight:bold;
+border-radius:5px;
 
 }
 
 .btn:hover{
 
-    background:#1565C0;
+background:#0B3B75;
 
 }
 
-/*==================================================
-MTC LINK
-==================================================*/
-
-.mtcLink{
-
-    display:block;
-    margin:6px 0;
-    color:#0B3B75;
-    font-weight:bold;
-    text-decoration:none;
-
-}
-
-.mtcLink:hover{
-
-    color:#FF9800;
-    text-decoration:underline;
-
-}
-
-/*==================================================
+/*=========================================
 FOOTER
-==================================================*/
+=========================================*/
 
 .footer{
 
-    background:#F4F6F9;
-    text-align:center;
-    padding:18px;
-    color:#666;
-    font-size:13px;
-    border-top:1px solid #d8dce2;
+text-align:center;
+padding:18px;
+font-size:13px;
+background:#F5F5F5;
+color:#666;
 
 }
 
-/*==================================================
+/*=========================================
 MOBILE
-==================================================*/
+=========================================*/
 
-@media(max-width:900px){
+@media(max-width:600px){
 
 body{
 
-    padding:10px;
+padding:3px;
 
 }
 
 .container{
 
-    width:100%;
-
-}
-
-.header{
-
-    flex-direction:column;
-
-    padding:20px;
-
-}
-
-.headerLeft{
-
-    width:100%;
-    margin-bottom:15px;
-
-}
-
-.headerRight{
-
-    width:100%;
-    margin:0;
-    align-items:center;
-    text-align:center;
+border-radius:6px;
 
 }
 
 .logo{
 
-    width:110px;
+width:70px;
+
+}
+
+.header{
+
+padding:12px;
 
 }
 
 .header h1{
 
-    font-size:30px;
+font-size:22px;
 
 }
 
-.header h2{
+.header p{
 
-    font-size:17px;
-    letter-spacing:2px;
+font-size:11px;
 
 }
 
-.line{
+.sectionTitle{
 
-    margin:15px auto 0;
+font-size:17px;
+padding:8px;
 
 }
 
 .details td{
 
-    display:block;
-    width:100%;
+padding:7px;
+font-size:11px;
 
 }
 
 .title{
 
-    background:#0B3B75;
-    color:#fff;
+width:34%;
 
 }
 
 .btn{
 
-    width:100%;
-    display:block;
-    text-align:center;
+font-size:11px;
+padding:8px;
+
+}
+
+.footer{
+
+font-size:10px;
+padding:10px;
 
 }
 
@@ -338,13 +267,12 @@ body{
 
 <div class="container">
 
-   <div class="header">
+<div class="header">
 
     <div class="headerLeft">
 
         <img src="https://raw.githubusercontent.com/jitusakhra-art/Logo/main/company_logo.png.png"
-             class="logo"
-             alt="MetalMech Engineering">
+             class="logo">
 
     </div>
 
@@ -352,112 +280,165 @@ body{
 
         <h1>MetalMech Engineering</h1>
 
-        <h2>Dispatch Material Traceability</h2>
-
-        <div class="line"></div>
+        <p>Dispatch Material Traceability / Documents</p>
 
     </div>
 
 </div>
 
-    <table class="details">
+<div class="sectionTitle">
 
-        <tr>
+DISPATCH DETAILS
 
-            <td class="title">Travel Card No</td>
+</div>
 
-            <td>TS-413</td>
+<table class="details">
 
-        </tr>
+<tr>
 
-        <tr>
+<td class="title">
+Travel Card No
+</td>
 
-            <td class="title">Item Name</td>
+<td>
+TS-413
+</td>
 
-            <td>MM EX E1FUNV 20 1/2" NPT SUB GLAND STAINLESS STEEL (S.S. 316)</td>
+</tr>
 
-        </tr>
+<tr>
 
-        <tr>
+<td class="title">
+Item Name
+</td>
 
-            <td class="title">Assembly No</td>
+<td>
+MM EX E1FUNV 20 1/2" NPT SUB GLAND STAINLESS STEEL (S.S. 316)
+</td>
 
-            <td><b>CEX260803-05</b></td>
+</tr>
 
-        </tr>
+<tr>
 
-        <tr>
+<td class="title">
+Assembly No
+</td>
 
-            <td class="title">CMN No</td>
+<td>
 
-            <td>C26010501-01</td>
+<b>CEX260803-05</b>
 
-        </tr>
+</td>
 
-        <tr>
+</tr>
 
-            <td class="title">RMN No</td>
+<tr>
 
-            <td>R250825-04</td>
+<td class="title">
+CMN No
+</td>
 
-        </tr>
-	        <tr>
+<td>
 
-            <td class="title">MTC No</td>
+C26010501-01
 
-            <td>
+</td>
 
-                ULS-532-0725<br>ULS-533-0725<br>ULS-059-0625<br>ULS-239-0825
+</tr>
 
-            </td>
+<tr>
 
-        </tr>
+<td class="title">
+RMN No
+</td>
 
-        <tr>
+<td>
 
-            <td class="title">Work Order</td>
+R250825-04
 
-            <td>26000201</td>
+</td>
 
-        </tr>
+</tr>
 
-        <tr>
+<tr>
 
-            <td class="title">Dispatch Qty</td>
+<td class="title">
+MTC No
+</td>
 
-            <td>10</td>
+<td>
 
-        </tr>
+ULS-532-0725<br>ULS-533-0725<br>ULS-059-0625<br>ULS-239-0825
 
-        <tr>
+</td>
 
-            <td class="title">Final Inspection Report</td>
+</tr>
 
-            <td>
+<tr>
 
-                <a href="Open Report"
-                   class="btn"
-                   target="_blank">
+<td class="title">
+Work Order
+</td>
 
-                    OPEN FINAL INSPECTION REPORT
+<td>
 
-                </a>
+26000201
 
-            </td>
+</td>
 
-        </tr>
+</tr>
 
-    </table>
+<tr>
 
-    <div class="footer">
+<td class="title">
+Dispatch Qty
+</td>
 
-        <b>MetalMech Engineering</b><br>
+<td>
 
-        Dispatch Material Traceability System<br><br>
+10
 
-        Last Updated : 05-Aug-2026 02:50 PM
+</td>
 
-    </div>
+</tr>
+
+<tr>
+
+<td class="title">
+Final Inspection Report
+</td>
+
+<td>
+
+<a href="Open Report"
+target="_blank"
+class="btn">
+
+OPEN FINAL INSPECTION REPORT
+
+</a>
+
+</td>
+
+</tr>
+
+</table>
+
+<div class="footer">
+
+<b>MetalMech Engineering</b>
+
+<br><br>
+
+Dispatch Material Traceability System
+
+<br><br>
+
+Last Updated :
+
+05-Aug-2026 03:53 PM
+
+</div>
 
 </div>
 
