@@ -121,13 +121,15 @@ HEADER
 
 .headerLeft{
 
-    width:160px;
+    width:180px;
 
     display:flex;
 
     justify-content:center;
 
     align-items:center;
+
+    flex-shrink:0;
 
 }
 
@@ -145,7 +147,7 @@ HEADER
 
     text-align:center;
 
-    margin-right:160px;
+    padding-right:180px;
 
 }
 
@@ -243,23 +245,86 @@ MOBILE
 
 @media(max-width:900px){
 
+body{
+
+    padding:10px;
+
+}
+
 .container{
 
-width:100%;
+    width:100%;
+
+}
+
+.header{
+
+    flex-direction:column;
+
+    padding:20px;
+
+}
+
+.headerLeft{
+
+    width:100%;
+    margin-bottom:15px;
+
+}
+
+.headerRight{
+
+    width:100%;
+    margin:0;
+    align-items:center;
+    text-align:center;
+
+}
+
+.logo{
+
+    width:110px;
+
+}
+
+.header h1{
+
+    font-size:30px;
+
+}
+
+.header h2{
+
+    font-size:17px;
+    letter-spacing:2px;
+
+}
+
+.line{
+
+    margin:15px auto 0;
 
 }
 
 .details td{
 
-display:block;
-width:100%;
+    display:block;
+    width:100%;
 
 }
 
 .title{
 
-background:#0B3B75;
-color:#fff;
+    background:#0B3B75;
+    color:#fff;
+
+}
+
+.btn{
+
+    width:100%;
+    display:block;
+    text-align:center;
 
 }
 
@@ -390,7 +455,7 @@ color:#fff;
 
         Dispatch Material Traceability System<br><br>
 
-        Last Updated : 05-Aug-2026 02:33 PM
+        Last Updated : 05-Aug-2026 02:50 PM
 
     </div>
 
