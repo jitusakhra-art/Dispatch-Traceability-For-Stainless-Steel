@@ -232,15 +232,43 @@ FOOTER
 
 .footer{
 
-background:#F5F5F5;
+    display:flex;
 
-padding:20px;
+    justify-content:space-between;
 
-text-align:center;
+    align-items:center;
 
-font-size:13px;
+    background:#F5F5F5;
 
-color:#666;
+    padding:20px;
+
+    font-size:13px;
+
+    color:#666;
+
+}
+
+.footerLeft{
+
+    width:30%;
+
+    text-align:left;
+
+}
+
+.footerCenter{
+
+    width:40%;
+
+    text-align:center;
+
+}
+
+.footerRight{
+
+    width:30%;
+
+    text-align:right;
 
 }
 
@@ -354,9 +382,23 @@ padding:10px;
 
 .footer{
 
-font-size:11px;
+    flex-direction:column;
 
-padding:15px;
+    gap:12px;
+
+    font-size:11px;
+
+    padding:15px;
+
+}
+
+.footerLeft,
+.footerCenter,
+.footerRight{
+
+    width:100%;
+
+    text-align:center;
 
 }
 
@@ -552,17 +594,29 @@ OPEN FINAL INSPECTION REPORT
 
 <div class="footer">
 
-<b>MetalMech Engineering</b>
+    <div class="footerLeft">
 
-<br><br>
+        <b>Prepared By</b><br>
 
-Dispatch Material Traceability System
+        Jitu Gadhvi
 
-<br><br>
+    </div>
 
-Last Updated :
+    <div class="footerCenter">
 
-05-Aug-2026 06:16 PM
+        <b>MetalMech Engineering</b><br>
+
+        Material Traceability System
+
+    </div>
+
+    <div class="footerRight">
+
+        <b>Approved By</b><br>
+
+        ABC XYZ
+
+    </div>
 
 </div>
 
